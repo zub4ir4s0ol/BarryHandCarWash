@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Phone } from "lucide-react";
-import LogoMark from "./LogoMark";
 import { BUSINESS, NAV_LINKS, tel } from "../constants/site";
 
 const Nav = () => {
@@ -12,8 +11,7 @@ const Nav = () => {
       className="fixed top-0 inset-x-0 z-50 border-b border-line/70 bg-ink/80 backdrop-blur-xl"
     >
       <div className="mx-auto flex h-16 lg:h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <a href="#top" className="flex items-center gap-3" data-testid="nav-logo-link">
-          <LogoMark className="h-9 w-9 lg:h-11 lg:w-11" />
+        <a href="#top" className="flex items-center" data-testid="nav-logo-link">
           <span className="font-display text-xl sm:text-2xl lg:text-3xl tracking-wide text-snow whitespace-nowrap">
             Barry <span className="text-glow">Hand Car Wash</span>
           </span>

@@ -33,6 +33,11 @@ Owner of "Barry Hand Car Wash" (182-190 Barry Road, Barry, CF62 9BE) wants a web
 - Added 4.7 Google rating: hero badge, About review card, Visit "Leave a Review" button, footer link. Real listing found: Barry Hand Car Wash, 4.7 from 22 reviews — reviewUrl now opens the real Google listing directly (google.com/maps?cid=1192728031576523538).
 - Added OpenGraph/social share meta with the owner's Urus photo as the thumbnail.
 
+## Update round 3 (2026-10-07, owner feedback)
+- "Under New Management" removed everywhere (hero badge, marquee, footer, about text).
+- Little SVG logo removed from nav top-left (text wordmark only); the real shield logo now appears in the hero card, the loyalty stamp card, and the footer.
+- Payment info added: "Cash & card accepted — cash preferred" in the price list section and in the Find Us address card. "Cash & Card Accepted" also added to the marquee.
+
 ## Note for owner
 - Google listing shows hours 8:30–18:30 all 7 days; the flyer says Sun 9am–5pm and Mon–Sat until 6pm. Site currently shows the FLYER times — tell us which is correct and we'll match it.
 

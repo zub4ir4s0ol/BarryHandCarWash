@@ -1,5 +1,4 @@
 import { Phone, MapPin, Star } from "lucide-react";
-import LogoMark from "./LogoMark";
 import { BUSINESS, tel, reviewUrl } from "../constants/site";
 
 const Footer = () => (
@@ -7,11 +6,16 @@ const Footer = () => (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div className="flex flex-col items-start justify-between gap-10 border-b border-line pb-12 md:flex-row md:items-center">
         <div className="flex items-center gap-4">
-          <LogoMark className="h-14 w-14" />
+          <img
+            src="/images/logo.png"
+            alt="Barry Hand Car Wash logo"
+            data-testid="footer-logo"
+            className="h-16 w-16 rounded-xl bg-white object-contain p-1"
+          />
           <div>
             <p className="font-display text-3xl tracking-wide text-snow">Barry Hand Car Wash</p>
             <p className="font-cond text-sm font-semibold uppercase tracking-[0.3em] text-mist">
-              Under new management
+              Hand car wash &amp; valeting
             </p>
           </div>
         </div>

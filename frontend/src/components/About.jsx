@@ -35,7 +35,7 @@ const About = () => (
           <SectionHeading
             kicker="The craft"
             title={<>A proper wash,<br />the way it should be</>}
-            sub="Under new management and washing cars the right way — every car done by hand, every time. No tunnels, no shortcuts, no swirl marks."
+            sub="Washing cars the right way — every car done by hand, every time. No tunnels, no shortcuts, no swirl marks."
           />
           <div className="grid gap-4 sm:grid-cols-2">
             {PILLARS.map((p, i) => (

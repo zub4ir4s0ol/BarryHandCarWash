@@ -33,9 +33,9 @@ export const NAV_LINKS = [
 
 export const MARQUEE_ITEMS = [
   "100% Hand Wash Only",
-  "Under New Management",
   "Free Air Freshener With Every Wash",
   "Open 7 Days A Week",
   "No Booking Needed — Just Turn Up",
   "4 Stamps = 5th Wash & Dry Free",
+  "Cash & Card Accepted",
 ];

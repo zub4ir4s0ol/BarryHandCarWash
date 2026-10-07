@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { Phone, ChevronDown, Sparkles, Star } from "lucide-react";
+import { Phone, ChevronDown, Star } from "lucide-react";
 import { tel, reviewUrl } from "../constants/site";
 
 const line = {
@@ -59,18 +59,6 @@ const Hero = () => {
 
       <div className="relative z-10 mx-auto grid w-full max-w-7xl items-center gap-14 px-4 pt-28 pb-20 sm:px-6 lg:grid-cols-[1.25fr_1fr] lg:gap-8 lg:px-8 lg:pt-24">
         <div>
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="mb-7 inline-flex items-center gap-2 rounded-full border border-crimson/50 bg-crimson/10 px-4 py-1.5"
-          >
-            <Sparkles className="h-3.5 w-3.5 text-crimsonlight" />
-            <span className="font-cond text-xs font-bold uppercase tracking-[0.28em] text-crimsonlight sm:text-sm">
-              Under New Management
-            </span>
-          </motion.div>
-
           <h1 className="font-display uppercase leading-[0.88] tracking-wide text-snow">
             {[
               { t: "Your Car,", c: "text-snow" },

@@ -2,7 +2,6 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Phone, Stamp } from "lucide-react";
 import { Reveal, SectionHeading } from "./Reveal";
-import LogoMark from "./LogoMark";
 import { tel } from "../constants/site";
 
 const Loyalty = () => {
@@ -54,7 +53,11 @@ const Loyalty = () => {
                     Loyalty Card
                   </p>
                 </div>
-                <LogoMark className="h-12 w-12" />
+                <img
+                  src="/images/logo.png"
+                  alt="Barry Hand Car Wash logo"
+                  className="h-12 w-12 rounded-lg bg-white object-contain p-0.5"
+                />
               </div>
 
               <div className="mt-8 grid grid-cols-5 gap-3 sm:gap-4">

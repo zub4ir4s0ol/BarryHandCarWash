@@ -142,6 +142,12 @@ const Services = () => {
             Not sure what size your car is? Just ask when you call — we&amp;ll sort you out.
           </p>
         </Reveal>
+
+        <Reveal delay={0.15}>
+          <p className="mt-3 text-center font-cond text-sm font-bold uppercase tracking-[0.25em] text-gold" data-testid="services-payment-note">
+            Cash &amp; card accepted — cash preferred
+          </p>
+        </Reveal>
       </div>
     </section>
   );

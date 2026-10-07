@@ -1,4 +1,4 @@
-import { Clock, MapPin, Phone, Navigation, Star } from "lucide-react";
+import { Clock, MapPin, Phone, Navigation, Star, Banknote, CreditCard } from "lucide-react";
 import { Reveal, SectionHeading } from "./Reveal";
 import { BUSINESS, tel, reviewUrl } from "../constants/site";
 
@@ -32,8 +32,7 @@ const Visit = () => (
                   className="flex items-center gap-2 rounded-full bg-crimson px-6 py-3 font-cond font-bold uppercase tracking-widest text-snow transition-all hover:bg-crimsonlight hover:scale-[1.03]"
                 >
                   <Phone className="h-4 w-4" /> {BUSINESS.phone}
-                </a>
-                <a
+                </a>                <a
                   href={reviewUrl}
                   target="_blank"
                   rel="noreferrer"
@@ -51,6 +50,13 @@ const Visit = () => (
                 >
                   <Navigation className="h-4 w-4" /> Get Directions
                 </a>
+              </div>
+              <div className="mt-6 flex items-center gap-3 border-t border-line/70 pt-5" data-testid="payment-info">
+                <Banknote className="h-5 w-5 text-gold" />
+                <CreditCard className="h-5 w-5 text-mist" />
+                <p className="font-cond text-sm font-semibold uppercase tracking-widest text-snow">
+                  Cash &amp; card accepted <span className="text-gold">— cash preferred</span>
+                </p>
               </div>
             </div>
           </Reveal>
