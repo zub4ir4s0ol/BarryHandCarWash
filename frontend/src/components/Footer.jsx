@@ -1,6 +1,6 @@
-import { Phone, MapPin } from "lucide-react";
+import { Phone, MapPin, Star } from "lucide-react";
 import LogoMark from "./LogoMark";
-import { BUSINESS, tel } from "../constants/site";
+import { BUSINESS, tel, reviewUrl } from "../constants/site";
 
 const Footer = () => (
   <footer data-testid="footer-section" className="relative overflow-hidden bg-ink pt-16">
@@ -43,6 +43,15 @@ const Footer = () => (
         <p className="font-cond text-xs font-semibold uppercase tracking-[0.25em] text-mist">
           Mon–Sat 8:30am–6pm · Sun 9am–5pm
         </p>
+        <a
+          href={reviewUrl}
+          target="_blank"
+          rel="noreferrer"
+          data-testid="footer-review-link"
+          className="flex items-center gap-1.5 font-cond text-xs font-semibold uppercase tracking-[0.25em] text-mist transition-colors hover:text-gold"
+        >
+          <Star className="h-3.5 w-3.5 fill-gold text-gold" /> 4.7 on Google
+        </a>
       </div>
     </div>
   </footer>

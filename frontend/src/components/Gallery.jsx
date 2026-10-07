@@ -1,12 +1,11 @@
 import { Reveal, SectionHeading } from "./Reveal";
 
 const SLOTS = [
-  { src: "/images/gallery/g1.jpg", label: "Interior detailing" },
-  { src: "/images/gallery/g2.jpg", label: "Wheel care" },
-  { src: "/images/gallery/g3.jpg", label: "Inside refresh" },
-  { src: "/images/gallery/g4.jpg", label: "Snow foam wash" },
-  { src: "/images/gallery/g5.jpg", label: "Hand finish" },
-  { src: "/images/gallery/g6.jpg", label: "Cabin deep clean" },
+  { src: "/images/gallery/g1.jpg", label: "Showroom shine" },
+  { src: "/images/gallery/g2.jpg", label: "Inside & out" },
+  { src: "/images/gallery/g3.jpg", label: "Fresh every time" },
+  { src: "/images/gallery/g4.jpg", label: "Hand dried finish" },
+  { src: "/images/gallery/g5.jpg", label: "SUVs & 4x4s" },
 ];
 
 const Gallery = () => (
@@ -15,7 +14,7 @@ const Gallery = () => (
       <SectionHeading
         kicker="The results"
         title={<>Fresh from the bay</>}
-        sub="A look at the finish we send you home with."
+        sub="Real cars, real results — straight from our wash on Barry Road."
       />
       <div className="grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-3">
         {SLOTS.map((s, i) => (
@@ -36,6 +35,18 @@ const Gallery = () => (
             </div>
           </Reveal>
         ))}
+        <Reveal delay={0.16} className="col-span-2 lg:col-span-1">
+          <a
+            href="#visit"
+            data-testid="gallery-visit-cta"
+            className="flex aspect-[4/3] flex-col items-center justify-center gap-3 rounded-2xl border border-dashed border-glow/50 bg-royal/10 text-center transition-colors hover:bg-royal/20"
+          >
+            <p className="font-display text-3xl tracking-wide text-snow">YOUR CAR</p>
+            <p className="font-cond text-sm font-semibold uppercase tracking-[0.25em] text-glow">
+              Could be next — just roll in
+            </p>
+          </a>
+        </Reveal>
       </div>
     </div>
   </section>

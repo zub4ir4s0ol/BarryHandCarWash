@@ -1,6 +1,6 @@
-import { Clock, MapPin, Phone, Navigation } from "lucide-react";
+import { Clock, MapPin, Phone, Navigation, Star } from "lucide-react";
 import { Reveal, SectionHeading } from "./Reveal";
-import { BUSINESS, tel } from "../constants/site";
+import { BUSINESS, tel, reviewUrl } from "../constants/site";
 
 const Visit = () => (
   <section id="visit" data-testid="visit-section" className="bg-navy py-20 lg:py-28">
@@ -8,7 +8,7 @@ const Visit = () => (
       <SectionHeading
         kicker="Find us"
         title={<>Roll in — no booking needed</>}
-        sub="Right on Barry Road, open 7 days a week. Call ahead if you want a slot for a full valet."
+        sub="Right on Barry Road, open 7 days a week. No booking needed — just turn up and see us."
       />
       <div className="grid gap-6 lg:grid-cols-2">
         <div className="grid gap-6">
@@ -32,6 +32,15 @@ const Visit = () => (
                   className="flex items-center gap-2 rounded-full bg-crimson px-6 py-3 font-cond font-bold uppercase tracking-widest text-snow transition-all hover:bg-crimsonlight hover:scale-[1.03]"
                 >
                   <Phone className="h-4 w-4" /> {BUSINESS.phone}
+                </a>
+                <a
+                  href={reviewUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  data-testid="visit-review-button"
+                  className="flex items-center gap-2 rounded-full border border-gold/60 px-6 py-3 font-cond font-bold uppercase tracking-widest text-gold transition-all hover:bg-gold hover:text-ink"
+                >
+                  <Star className="h-4 w-4 fill-gold" /> 4.7 · Leave a Review
                 </a>
                 <a
                   href={BUSINESS.mapDirections}

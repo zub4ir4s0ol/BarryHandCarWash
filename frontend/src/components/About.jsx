@@ -1,5 +1,6 @@
-import { Hand, Droplets, CarFront, MapPin, Sparkles } from "lucide-react";
+import { Hand, Droplets, CarFront, MapPin, Star, Sparkles, ArrowUpRight } from "lucide-react";
 import { Reveal, SectionHeading } from "./Reveal";
+import { reviewUrl } from "../constants/site";
 
 const PILLARS = [
   {
@@ -23,6 +24,8 @@ const PILLARS = [
     desc: "Right here on Barry Road. Pop in while you shop, walk into town, or just sit and watch the shine happen.",
   },
 ];
+
+const STARS = [0, 1, 2, 3, 4];
 
 const About = () => (
   <section id="about" data-testid="about-section" className="relative bg-ink py-20 lg:py-28">
@@ -49,29 +52,46 @@ const About = () => (
           </div>
         </div>
 
-        <div className="grid grid-cols-2 gap-4">
-          <Reveal className="col-span-2">
-            <div className="overflow-hidden rounded-3xl border border-line">
-              <img
-                src="/images/suds.jpg"
-                alt="Car covered in snow foam suds"
-                className="h-64 w-full object-cover transition-transform duration-700 hover:scale-105 sm:h-80"
-              />
-            </div>
+        <div className="grid gap-4">
+          <Reveal>
+            <a
+              href={reviewUrl}
+              target="_blank"
+              rel="noreferrer"
+              data-testid="about-review-card"
+              className="group relative block overflow-hidden rounded-3xl border border-gold/40 bg-gradient-to-br from-navy via-ink to-royal/20 p-8 transition-all hover:border-gold sm:p-10"
+            >
+              <div className="flex flex-wrap items-center justify-between gap-6">
+                <div>
+                  <p className="font-mono text-xs uppercase tracking-[0.3em] text-mist">
+                    Google reviews
+                  </p>
+                  <p className="mt-2 font-display text-7xl leading-none tracking-wide text-snow sm:text-8xl">
+                    4.7
+                  </p>
+                  <div className="mt-3 flex items-center gap-1">
+                    {STARS.map((i) => (
+                      <Star
+                        key={i}
+                        className={`h-5 w-5 ${i < 4 ? "fill-gold text-gold" : "fill-gold/50 text-gold/50"}`}
+                      />
+                    ))}
+                  </div>
+                  <p className="mt-3 font-cond text-base font-semibold uppercase tracking-[0.2em] text-mist">
+                    Rated by our customers
+                  </p>
+                </div>
+                <div className="flex items-center gap-2 rounded-full border border-snow/25 px-6 py-3 font-cond font-bold uppercase tracking-widest text-snow transition-colors group-hover:border-gold group-hover:text-gold">
+                  Read our reviews
+                  <ArrowUpRight className="h-4 w-4" />
+                </div>
+              </div>
+            </a>
           </Reveal>
-          <Reveal delay={0.1}>
-            <div className="overflow-hidden rounded-3xl border border-line">
-              <img
-                src="/images/craft.jpg"
-                alt="Hand washing a wheel with a brush"
-                className="h-48 w-full object-cover transition-transform duration-700 hover:scale-105 sm:h-56"
-              />
-            </div>
-          </Reveal>
-          <Reveal delay={0.2}>
-            <div className="flex h-48 flex-col justify-between rounded-3xl border border-crimson/40 bg-gradient-to-br from-crimson/20 to-navy p-6 sm:h-56">
-              <Sparkles className="h-7 w-7 text-crimsonlight" />
-              <div>
+          <Reveal delay={0.15}>
+            <div className="flex items-center justify-between gap-6 rounded-3xl border border-crimson/40 bg-gradient-to-br from-crimson/20 to-navy p-8">
+              <Sparkles className="h-9 w-9 shrink-0 text-crimsonlight" />
+              <div className="text-right">
                 <p className="font-display text-4xl tracking-wide text-snow sm:text-5xl">
                   FREE
                 </p>

@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { Phone, ChevronDown, Sparkles } from "lucide-react";
-import { tel } from "../constants/site";
+import { Phone, ChevronDown, Sparkles, Star } from "lucide-react";
+import { tel, reviewUrl } from "../constants/site";
 
 const line = {
   hidden: { y: "110%" },
@@ -97,9 +97,9 @@ const Hero = () => {
             transition={{ delay: 0.75, duration: 0.7 }}
             className="mt-6 max-w-md text-base text-mist sm:text-lg"
           >
-            Mini valets from <span className="font-mono font-bold text-gold">£20</span> and
-            full valets from <span className="font-mono font-bold text-gold">£55</span> —
-            every wash done by hand, finished with a free air freshener.
+            Professional hand car wash in Barry, providing quality cleaning inside
+            and out to keep your car fresh — all done by hand, finished with a
+            free air freshener.
           </motion.p>
 
           <motion.div
@@ -125,6 +125,29 @@ const Hero = () => {
               <ChevronDown className="h-5 w-5" />
             </a>
           </motion.div>
+
+          <motion.a
+            href={reviewUrl}
+            target="_blank"
+            rel="noreferrer"
+            data-testid="hero-rating-link"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1.05, duration: 0.7 }}
+            className="mt-8 inline-flex items-center gap-3 rounded-full border border-line bg-navy/80 py-2 pl-4 pr-5 transition-colors hover:border-gold"
+          >
+            <span className="flex items-center gap-0.5">
+              {[0, 1, 2, 3, 4].map((i) => (
+                <Star
+                  key={i}
+                  className={`h-4 w-4 ${i < 4 ? "fill-gold text-gold" : "fill-gold/50 text-gold/50"}`}
+                />
+              ))}
+            </span>
+            <span className="font-cond text-sm font-bold uppercase tracking-widest text-snow">
+              4.7 · Rated on Google
+            </span>
+          </motion.a>
         </div>
 
         <motion.div

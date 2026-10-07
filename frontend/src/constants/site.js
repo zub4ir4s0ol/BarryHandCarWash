@@ -15,7 +15,11 @@ export const BUSINESS = {
     "https://maps.google.com/maps?q=182-190%20Barry%20Road%2C%20Barry%2C%20CF62%209BE&t=&z=15&ie=UTF8&iwloc=&output=embed",
   mapDirections:
     "https://www.google.com/maps/dir/?api=1&destination=182-190+Barry+Road,+Barry,+CF62+9BE",
+  rating: "4.7",
 };
+
+export const reviewUrl =
+  "https://www.google.com/maps/search/?api=1&query=Barry+Hand+Car+Wash+182-190+Barry+Road+Barry+CF62+9BE";
 
 export const tel = (b = BUSINESS) => `tel:${b.phoneIntl}`;
 

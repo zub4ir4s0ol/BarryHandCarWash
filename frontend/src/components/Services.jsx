@@ -76,7 +76,7 @@ const ServiceCard = ({ svc, size, featured }) => (
         data-testid={`service-call-${svc.n}`}
         className="flex items-center gap-2 rounded-full border border-snow/20 px-4 py-2 font-cond text-sm font-bold uppercase tracking-widest text-snow transition-colors hover:border-crimson hover:bg-crimson"
       >
-        <Phone className="h-3.5 w-3.5" /> Call to book in
+        <Phone className="h-3.5 w-3.5" /> Call Us
       </a>
     </div>
   </div>

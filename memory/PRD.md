@@ -25,10 +25,13 @@ Owner of "Barry Hand Car Wash" (182-190 Barry Road, Barry, CF62 9BE) wants a web
 
 ## Implemented (2026-10-07)
 - All 9 sections above, mobile-first responsive, data-testids throughout.
-- Gallery uses stock placeholder photos, stored at public/images/gallery/g1..g6.jpg — owner swaps these files to add his own photos.
+
+## Update round 2 (2026-10-07, owner feedback)
+- Replaced ALL stock photos with the owner's 5 real photos (gallery g1–g5, hero bg = owner's Urus photo). No fake photos remain.
+- Hero subline changed to owner's wording: "Professional hand car wash in Barry, providing quality cleaning inside and out to keep your car fresh" (prices line removed from hero; prices live in the price section).
+- Removed all booking language: service card CTAs now "Call Us"; visit section says "No booking needed — just turn up".
+- Added 4.7 Google rating: hero badge, About review card, Visit "Leave a Review" button, footer link. Review URL opens the Google Maps listing (swap `reviewUrl` in src/constants/site.js with the exact write-review link when available).
 
 ## Backlog
-- P2: Replace gallery stock photos with owner's real photos (owner does by swapping files in public/images/gallery/)
-- P2: Owner-provided real hero photo of the wash bay (currently stock)
-- P2: WhatsApp click-to-chat link if requested later
-- P3: SEO: add real business photos to OpenGraph meta
+- P2: Swap reviewUrl for the exact Google write-review link (needs place_id from owner)
+- P3: More owner photos as they come in
