@@ -38,6 +38,9 @@ Owner of "Barry Hand Car Wash" (182-190 Barry Road, Barry, CF62 9BE) wants a web
 - Little SVG logo removed from nav top-left (text wordmark only); the real shield logo now appears in the hero card, the loyalty stamp card, and the footer.
 - Payment info added: "Cash & card accepted — cash preferred" in the price list section and in the Find Us address card. "Cash & Card Accepted" also added to the marquee.
 
+## Update round 4 (2026-10-07, owner feedback)
+- Real shield logo now in the nav top-left (white tile next to wordmark) and shown large above the hero headline on mobile — logo leads the page on every device. Full set: nav, mobile hero, hero card (desktop), loyalty card, footer.
+
 ## Note for owner
 - Google listing shows hours 8:30–18:30 all 7 days; the flyer says Sun 9am–5pm and Mon–Sat until 6pm. Site currently shows the FLYER times — tell us which is correct and we'll match it.
 

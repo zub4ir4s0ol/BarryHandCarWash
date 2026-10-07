@@ -59,6 +59,16 @@ const Hero = () => {
 
       <div className="relative z-10 mx-auto grid w-full max-w-7xl items-center gap-14 px-4 pt-28 pb-20 sm:px-6 lg:grid-cols-[1.25fr_1fr] lg:gap-8 lg:px-8 lg:pt-24">
         <div>
+          <motion.img
+            src="/images/logo.png"
+            alt="Barry Hand Car Wash logo"
+            data-testid="hero-top-logo"
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="mb-7 h-24 w-auto rounded-2xl bg-white object-contain p-1.5 shadow-[0_20px_60px_-15px_rgba(29,78,216,0.5)] md:hidden"
+          />
+
           <h1 className="font-display uppercase leading-[0.88] tracking-wide text-snow">
             {[
               { t: "Your Car,", c: "text-snow" },

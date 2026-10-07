@@ -11,9 +11,15 @@ const Nav = () => {
       className="fixed top-0 inset-x-0 z-50 border-b border-line/70 bg-ink/80 backdrop-blur-xl"
     >
       <div className="mx-auto flex h-16 lg:h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <a href="#top" className="flex items-center" data-testid="nav-logo-link">
-          <span className="font-display text-xl sm:text-2xl lg:text-3xl tracking-wide text-snow whitespace-nowrap">
-            Barry <span className="text-glow">Hand Car Wash</span>
+        <a href="#top" className="flex items-center gap-3" data-testid="nav-logo-link">
+          <img
+            src="/images/logo.png"
+            alt="Barry Hand Car Wash logo"
+            data-testid="nav-logo-mark"
+            className="h-10 w-10 rounded-lg bg-white object-contain p-0.5 lg:h-12 lg:w-12"
+          />
+          <span className="font-display text-lg sm:text-2xl lg:text-3xl tracking-wide text-snow whitespace-nowrap">
+            Barry <span className="text-glow"><span className="hidden sm:inline">Hand Car Wash</span><span className="sm:hidden">HCW</span></span>
           </span>
         </a>
 
