@@ -1,0 +1,48 @@
+[
+  {
+    "n": 1,
+    "name": "Wash & Dry",
+    "tag": "The classic",
+    "desc": "Hand wash with snow foam, wheels rinsed, then hand dried with soft microfibre towels.",
+    "prices": { "small": 10, "medium": 12, "large": 15 }
+  },
+  {
+    "n": 2,
+    "name": "Mini Valet",
+    "tag": "Most popular",
+    "featured": true,
+    "from": 20,
+    "desc": "Everything in a wash and dry, plus a full interior refresh: vacuum, dash wipe-down and windows inside and out.",
+    "prices": { "small": 20, "medium": 25, "large": 30 }
+  },
+  {
+    "n": 3,
+    "name": "Wash & Body Polish",
+    "tag": "Deep shine",
+    "desc": "Hand wash and dry followed by a hand body polish to bring the paintwork back to life.",
+    "prices": { "small": 25, "medium": 30, "large": 35 }
+  },
+  {
+    "n": 4,
+    "name": "Mini Valet & Hand Body Polish",
+    "tag": "Inside & out",
+    "desc": "Our mini valet with a full interior refresh, finished with a hand body polish for extra shine.",
+    "prices": { "small": 35, "medium": 40, "large": 45 }
+  },
+  {
+    "n": 5,
+    "name": "Full Valet",
+    "tag": "Showroom finish",
+    "featured": true,
+    "from": 55,
+    "desc": "The complete reset: deep interior clean, upholstery attention, hand wash, body polish and hand finish. Our most thorough clean.",
+    "prices": { "small": 55, "medium": 60, "large": 65 }
+  },
+  {
+    "n": 6,
+    "name": "Van Wash",
+    "tag": "Vans & commercial",
+    "desc": "Hand wash and dry for vans and commercial vehicles — same care, bigger bodywork.",
+    "prices": { "small": 10, "medium": 12, "large": 15 }
+  }
+]

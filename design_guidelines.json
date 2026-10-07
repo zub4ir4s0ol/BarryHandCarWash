@@ -1,0 +1,107 @@
+{
+  "project_name": "Barry Hand Car Wash",
+  "design_archetype": "THE PERFORMANCE PRO x AUTOMOTIVE CRAFT ATELIER",
+  "target_audience": "Car owners, commuters, local drivers, taxi drivers, and car enthusiasts in Barry and surrounding Vale of Glamorgan seeking high-quality, meticulous hand washing & valeting.",
+  "emotional_tone": "Craftsmanship, local pride, precision detailing, raw mechanical energy, warmth of human hand-wash care vs cold drive-thru machines.",
+  "typography": {
+    "font_family_heading": "Bebas Neue / Oswald / Barlow Condensed (Condensed High-Impact Display)",
+    "font_family_body": "Plus Jakarta Sans / DM Sans (High-legibility geometric sans)",
+    "font_family_mono": "JetBrains Mono / Space Mono (Precision pricing & specs)",
+    "hierarchy": {
+      "h1_hero": "text-5xl sm:text-7xl lg:text-8xl tracking-tight font-black uppercase leading-none",
+      "h2_section": "text-3xl sm:text-4xl lg:text-5xl tracking-tight font-extrabold uppercase leading-none",
+      "h3_card": "text-xl sm:text-2xl font-bold tracking-tight uppercase",
+      "subheading": "text-base sm:text-lg text-slate-300 font-medium tracking-wide",
+      "price_label": "font-mono font-bold text-2xl text-amber-400",
+      "badge_eyebrow": "text-xs font-mono uppercase tracking-[0.25em] text-red-500 bg-red-950/40 border border-red-800/50 px-3 py-1 rounded-full"
+    }
+  },
+  "colors": {
+    "primary_dark_bg": "#0B111E",
+    "surface_navy_card": "#111A2E",
+    "surface_card_border": "#1E293B",
+    "royal_blue_accent": "#1D4ED8",
+    "royal_blue_glow": "#3B82F6",
+    "crimson_red_ribbon": "#DC2626",
+    "crimson_red_hover": "#EF4444",
+    "amber_highlight": "#F59E0B",
+    "text_primary": "#F8FAFC",
+    "text_secondary": "#94A3B8",
+    "text_muted": "#64748B",
+    "gradient_hero_overlay": "linear-gradient(to bottom, rgba(11, 17, 30, 0.6) 0%, rgba(11, 17, 30, 0.95) 85%, #0B111E 100%)",
+    "gradient_accent_glow": "radial-gradient(circle, rgba(29,78,216,0.15) 0%, rgba(11,17,30,0) 70%)"
+  },
+  "spacing_and_layout": {
+    "section_padding": "py-20 lg:py-28 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto",
+    "container_max_width": "max-w-7xl",
+    "grid_gap": "gap-6 lg:gap-8",
+    "border_radius": "rounded-2xl for cards & modals, rounded-full for badges & CTAs",
+    "bento_strategy": "Mode A Tetris Grid for Services & Features: Hero feature card spans 2 columns with contrasting red ribbon accents and badge tags."
+  },
+  "components_and_sections": [
+    {
+      "section_id": "sticky_nav",
+      "description": "Fixed header with custom royal blue shield logo mark with pressure washer icon, navigation anchor links (Services, Prices, Loyalty, Location), 'Under New Management' pill badge, and click-to-call '07518199557' button with pulse phone icon.",
+      "test_id": "nav-header"
+    },
+    {
+      "section_id": "hero_kinetic",
+      "description": "Full-width dark cinematic background with suds & pressure spray overlay. Huge masked headline 'BARRIERS BEGONE. BARRY'S PREMIER HAND CAR WASH', red ribbon accent badge ('UNDER NEW MANAGEMENT'), subline with 'Free Air Freshener With Every Wash', two main CTAs: 'Call Now to Wash (07518199557)' & 'View Price List', interactive car size selector toggle (Small / Medium / Large).",
+      "test_id": "hero-section"
+    },
+    {
+      "section_id": "trust_marquee",
+      "description": "Editorial continuous marquee ticker featuring high-impact badges: '100% HAND WASH ONLY' • 'UNDER NEW MANAGEMENT' • 'FREE AIR FRESHENER WITH EVERY WASH' • 'OPEN 7 DAYS A WEEK' • 'NO BOOKING NEEDED — JUST TURN UP' • '4 STAMPS = 5TH WASH FREE'.",
+      "test_id": "trust-marquee"
+    },
+    {
+      "section_id": "about_craftsmanship",
+      "description": "Local story & craftsmanship highlight. Explaining why hand washing protects paintwork vs mechanical scratching rollers. Features grid of 4 pillars: Scratch-Free Microfiber Technique, High-Pressure Rinse, Interior Perfection, Local Barry Pride.",
+      "test_id": "about-section"
+    },
+    {
+      "section_id": "services_price_list",
+      "description": "Interactive Service & Price Selector with vehicle category toggle (Small / Medium / Large). Visual pricing grid for all 6 core services: 1) Wash & Dry (£10/£12/£15), 2) Mini Valet (£20/£25/£30 - Hero highlighted), 3) Wash & Body Polish (£25/£30/£35), 4) Mini Valet & Hand Body Polish (£35/£40/£45), 5) Full Valet (£55/£60/£65 - Hero highlighted), 6) Van Wash (£10/£12/£15). Every option clearly displays 'Includes FREE Air Freshener'. Clicking any service opens a direct quick-call modal or call drawer with pre-selected service details.",
+      "test_id": "services-section"
+    },
+    {
+      "section_id": "loyalty_stamp_card",
+      "description": "Tactile interactive 5-stamp digital card. Displays 4 stamped shields and 1 glowing gold shield labelled '5TH WASH & DRY FREE!'. Interactive demo letting user tap to preview how stamps fill up, driving local repeat customer loyalty.",
+      "test_id": "loyalty-section"
+    },
+    {
+      "section_id": "gallery_grid",
+      "description": "6-slot gallery showcasing pristine finish results, foam coverage, wheel detailing, and interior vacuuming. Built as easily swappable high-res photo slots with hover zoom & lightbox modal.",
+      "test_id": "gallery-section"
+    },
+    {
+      "section_id": "visit_us_location",
+      "description": "Two-column operational hub. Left: Address (182-190 Barry Road, Barry, CF62 9BE), Click-to-call button (07518199557), Opening Hours Table (Mon-Sat: 8:30 AM - 6:00 PM | Sun: 9:00 AM - 5:00 PM), Directions button. Right: Embedded interactive Google Map iframe styled for dark mode contrast.",
+      "test_id": "visit-section"
+    },
+    {
+      "section_id": "footer",
+      "description": "Deep navy footer with giant condensed 'BARRY HAND CAR WASH' mark, quick navigation, address, opening hours summary, and copyright info.",
+      "test_id": "footer-section"
+    }
+  ],
+  "image_urls": {
+    "hero_car_foam": "https://images.unsplash.com/photo-1608506375591-b90e1f955e4b?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "car_wash_suds": "https://images.unsplash.com/photo-1633014041037-f5446fb4ce99?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "hand_wash_sponge": "https://images.unsplash.com/photo-1694678505383-676d78ea3b96?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "shiny_black_car": "https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?crop=entropy&cs=srgb&fm=jpg&q=85"
+  },
+  "motion_and_effects": {
+    "smooth_scroll": "Lenis smooth scroll integration on main container",
+    "entrance_animations": "framer-motion staggered fade-in + slide-up for cards and service rows",
+    "hero_reveal": "Masked headline character/word reveal on initial load",
+    "micro_interactions": "Hover scale on service cards, red ribbon hover shimmer, stamp pulse animation on loyalty card click"
+  },
+  "instructions_to_main_agent": [
+    "Build a single-page marketing website in React JS with Tailwind CSS, Framer Motion, and Lucide Icons.",
+    "Do NOT add any online booking forms or datepickers — customer action MUST be direct click-to-call (tel:07518199557) or driving to 182-190 Barry Road, Barry, CF62 9BE.",
+    "Highlight 'Under New Management', '4 Stamps = 5th Wash Free', and 'Free Air Freshener With Every Wash' prominently.",
+    "Ensure Mini Valet (from £20) and Full Valet (from £55) stand out visually as hero featured packages.",
+    "Add 'data-testid' to all key interactive elements (buttons, phone links, tabs, vehicle size selectors, stamp cards)."
+  ]
+}
