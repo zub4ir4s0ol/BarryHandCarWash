@@ -145,7 +145,7 @@ const Hero = () => {
               ))}
             </span>
             <span className="font-cond text-sm font-bold uppercase tracking-widest text-snow">
-              4.7 · Rated on Google
+              4.7 · 22 Google Reviews
             </span>
           </motion.a>
         </div>

@@ -78,7 +78,7 @@ const About = () => (
                     ))}
                   </div>
                   <p className="mt-3 font-cond text-base font-semibold uppercase tracking-[0.2em] text-mist">
-                    Rated by our customers
+                    From 22 Google reviews — tap to add yours
                   </p>
                 </div>
                 <div className="flex items-center gap-2 rounded-full border border-snow/25 px-6 py-3 font-cond font-bold uppercase tracking-widest text-snow transition-colors group-hover:border-gold group-hover:text-gold">

@@ -30,8 +30,12 @@ Owner of "Barry Hand Car Wash" (182-190 Barry Road, Barry, CF62 9BE) wants a web
 - Replaced ALL stock photos with the owner's 5 real photos (gallery g1–g5, hero bg = owner's Urus photo). No fake photos remain.
 - Hero subline changed to owner's wording: "Professional hand car wash in Barry, providing quality cleaning inside and out to keep your car fresh" (prices line removed from hero; prices live in the price section).
 - Removed all booking language: service card CTAs now "Call Us"; visit section says "No booking needed — just turn up".
-- Added 4.7 Google rating: hero badge, About review card, Visit "Leave a Review" button, footer link. Review URL opens the Google Maps listing (swap `reviewUrl` in src/constants/site.js with the exact write-review link when available).
+- Added 4.7 Google rating: hero badge, About review card, Visit "Leave a Review" button, footer link. Real listing found: Barry Hand Car Wash, 4.7 from 22 reviews — reviewUrl now opens the real Google listing directly (google.com/maps?cid=1192728031576523538).
+- Added OpenGraph/social share meta with the owner's Urus photo as the thumbnail.
+
+## Note for owner
+- Google listing shows hours 8:30–18:30 all 7 days; the flyer says Sun 9am–5pm and Mon–Sat until 6pm. Site currently shows the FLYER times — tell us which is correct and we'll match it.
 
 ## Backlog
-- P2: Swap reviewUrl for the exact Google write-review link (needs place_id from owner)
+- P2: Confirm which opening hours are correct (flyer vs Google listing)
 - P3: More owner photos as they come in
