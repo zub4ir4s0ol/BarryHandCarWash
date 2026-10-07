@@ -25,7 +25,7 @@ jobs:
         run: npm install --legacy-peer-deps
         
       - name: install hav
-        run: npm install ajv@8
+        run: npm install ajv@8 --legacy-peer-deps
     
   
       - name: Build website
